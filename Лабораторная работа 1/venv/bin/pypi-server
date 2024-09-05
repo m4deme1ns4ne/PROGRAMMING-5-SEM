@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/Users/aleksandrvolzanin/university-5-course/PROGRAMMING-5-SEM/Лабораторная работа 1/src/venv/bin/python3.12" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from pypiserver.__main__ import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
