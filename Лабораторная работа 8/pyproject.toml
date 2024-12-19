@@ -12,6 +12,7 @@ matplotlib = "^3.9.2"
 python-dotenv = "^1.0.1"
 seaborn = "^0.13.2"
 pandas = "^2.2.3"
+black = "^24.10.0"
 
 
 [build-system]
