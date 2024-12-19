@@ -114,7 +114,9 @@ class CurrencyRates(metaclass=SingletonMeta):
 if __name__ == "__main__":
     # Вывод в консоль
     rates_instance = CurrencyRates()
+    print("Вызов 1")
     rates_list = rates_instance.get_currencies()
+    print("Вызов 2")
     rates_list = rates_instance.get_currencies()
     if rates_list:
         print(json.dumps(rates_list, ensure_ascii=False, indent=4))
